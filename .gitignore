@@ -48,3 +48,7 @@ hs_err_*.log
 replay_*.log
 *.hprof
 *.jfr
+
+# Local port build outputs
+build-local/
+.deps/

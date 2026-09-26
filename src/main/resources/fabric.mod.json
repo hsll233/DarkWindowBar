@@ -1,35 +1,29 @@
 {
-	"schemaVersion": 1,
-	"id": "${id}",
-	"name": "${display_name}",
-	"version": "${modversion}",
-	"description": "${description}",
-	"authors": [
-		"${author}"
-	],
-	"contact": {
-		"sources": "https://github.com/${github}/${name}",
-		"issues": "https://github.com/${github}/${name}/issues"
-	},
-	"license": "${license}",
-	"icon": "assets/${id}/textures/mod_logo.png",
-	"environment": "*",
-	"entrypoints": { },
-	"mixins": [
-		"mixins.${mixinid}.json"
-	],
-	"custom": {
-		"modmenu": {
-			"links": {
-				"modmenu.discord": "${discord}"
-			}
-		}
-	},
-	"accessWidener": "${id}.accesswidener",
-	"depends": {
-		${depends}
-		"fabricloader": ">=0.15.0",
-		"minecraft": "${mc}",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "darkwindowbar",
+  "name": "Dark Window Bar (26.2 Port)",
+  "version": "1.0.0+26.2.port.1",
+  "description": "Unofficial source port of Txni's Dark Window Bar for Minecraft 26.2. Black Windows title bar, white text.",
+  "authors": [
+    "Txni",
+    "Local 26.2 adaptation"
+  ],
+  "contact": {
+    "sources": "https://github.com/hsll233/DarkWindowBar",
+    "issues": "https://github.com/hsll233/DarkWindowBar/issues"
+  },
+  "license": "LicenseRef-Toni-MMC",
+  "icon": "assets/darkwindowbar/textures/mod_logo.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "toni.darkwindowbar.fabric.DarkWindowBarClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-lifecycle-events-v1": "*"
+  }
 }
